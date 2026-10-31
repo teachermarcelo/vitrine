@@ -116,6 +116,7 @@
  </div>
 </div>
 
+<script>
 const SUPABASE_URL='https://nuyzvpkvawixidotuuio.supabase.co';
 const SUPABASE_KEY='sb_publishable_Xe8zdn_sbokiGy1aIvu-VQ_jGxV2qWS';
 const sb=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
@@ -154,5 +155,6 @@ document.getElementById('dashProductForm').addEventListener('submit',async e=>{e
 async function deleteDashProduct(id){if(!confirm('Excluir este material?'))return;const {error}=await sb.from('vitrine_products').delete().eq('id',id);if(error){alert('Erro ao excluir: '+error.message);return}await loadAdmin();await loadStore()}
 document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('navLinks').classList.toggle('open'));document.querySelectorAll('#navLinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('open')));document.getElementById('year').textContent=new Date().getFullYear();track('page_view');loadStore();
 
+</script>
 </body>
 </html>
