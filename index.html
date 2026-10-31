@@ -46,7 +46,7 @@
  </section>
  <div class="search-wrap"><div class="searchbar"><input id="searchInput" type="search" placeholder="🔎  Busque um material (ex.: English, atividades, TEA...)"><button id="searchBtn">Buscar</button></div></div>
  <section class="categories" id="categorias" aria-label="Categorias">
-  <button class="cat c1 active" data-category="Todos"><span class="emoji">🇬🇧</span>Todos os materiais</button>
+  <button class="cat c1 active" data-category="Inglês (A0–C2)"><span class="emoji">🇬🇧</span>Inglês (A0 – C2)</button>
   <button class="cat c2" data-category="TEA (Autismo)"><span class="emoji">🧩</span>TEA (Autismo)</button>
   <button class="cat c3" data-category="Psicopedagogia"><span class="emoji">🧠</span>Psicopedagogia</button>
   <button class="cat c4" data-category="Educação Infantil"><span class="emoji">🔤</span>Educação Infantil</button>
@@ -84,9 +84,9 @@
 <div class="admin-modal" id="adminModal" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
  <div class="modal-card">
   <h2 id="adminTitle">🔐 Área administrativa</h2>
-  <p>O painel administrativo será conectado ao sistema de autenticação seguro do Supabase.</p>
+  <p>Entre com a conta administrativa cadastrada no Supabase Auth. A senha é validada pelo Supabase e nunca fica salva neste arquivo.</p>
   <p class="admin-note">Por segurança, a senha não é exibida nem armazenada neste arquivo público. A autenticação será ativada na próxima etapa, sem expor credenciais no código-fonte.</p>
-  <label for="adminEmail">E-mail administrativo</label><input id="adminEmail" type="email" placeholder="Seu e-mail de administrador" autocomplete="username">
+  <label for="adminEmail">E-mail administrativo</label><input id="adminEmail" type="email" value="gestorpaid@gmail.com" autocomplete="username">
   <label for="adminPassword">Senha</label><input id="adminPassword" type="password" placeholder="Digite sua senha" autocomplete="current-password">
   <div class="modal-actions"><button class="enter" id="adminLogin" type="button">Entrar</button><button class="cancel" id="adminClose" type="button">Fechar</button></div>
  </div>
